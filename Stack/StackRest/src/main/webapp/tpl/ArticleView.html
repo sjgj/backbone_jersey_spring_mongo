@@ -1,0 +1,35 @@
+<div class="col-lg-12">
+	<h1 class="page-header">
+		<small>Create/Update an Article !!!</small>
+	</h1>
+</div>
+
+<form class="form-horizontal span12">
+	<div class="row">
+
+		<div class="form-group col-lg-6">
+			<label for="title">Title</label> <input type="text" name="title"
+				class="form-control" id="title"
+				value="<%= title === null ? '' : title %>" />
+		</div>
+		<div class="form-group col-lg-6">
+			<label for="input2">Remarks</label> <input type="remarks"
+				name="remarks" class="form-control" id="remarks"
+				value="<%= remarks === null ? '' : remarks %>">
+		</div>
+
+		<div class="form-group col-lg-12">
+			<label for="description">Description</label>
+			<textarea name="description" class="form-control" rows="6"
+				id="description">
+				<%= description === null ? '' : description %>
+				</textarea>
+		</div>
+
+	</div>
+	<div class="form-actions">
+		<a href="#" class="btn btn-primary save">Save</a> 
+		<a href="#articles" class="btn btn-warning">Cancel</a>
+	</div>
+</form>
+
